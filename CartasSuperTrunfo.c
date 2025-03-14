@@ -41,8 +41,18 @@
         printf("Carta 1: \n");
         printf("\n");
         printf("Estado: %s \n", estado1);
+        printf("Código: %s \n", codigo1);
+        printf("Cidade: %s \n", cidade1);
+        printf("População: %d", populacao1);
+        printf("Área: %f, \n", area1); 
+        printf("PIB: %f \n", pib1);
+        quociente = populacao1 / área;
+        printf("Densidade Populacional: %.2f \n", quociente);
+        quociente = pib1 / populacao1;
+        printf("PIB per Capita: %.2f \n", quociente);
 
-
+        printf("\n");
+        
 
 
 
