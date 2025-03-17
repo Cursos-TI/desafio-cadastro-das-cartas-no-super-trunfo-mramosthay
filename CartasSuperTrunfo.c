@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-//Teste Thaynara
-
-
-//Variáveis para cadastro das castas
     int main() {
         char estado1[50], estado2[50];
         char codigo1[50], codigo2[50];
@@ -24,18 +17,18 @@
         printf("Carta 1 \n");
         printf("\n");
         printf("Digite o Estado: \n");
-        scanf("%s", &estado1); 
+        scanf("%s", estado1); 
         printf("Digite o Código da Carta: \n");
-        scanf("%s", &codigo1);
+        scanf("%s", codigo1);
         printf("Digite a Cidade: \n");
-        scanf("%s", &cidade1);
+        scanf("%s", cidade1);
         printf("Digite a População: \n");
         scanf("%d", &populacao1);
         printf("Digite a Área: \n");
         scanf("%f", &area1);
         printf("Digite o PIB: \n");
         scanf("%f", &pib1);
-        print("Digite a Quantidade de Pontos Turísticos: \n");
+        printf("Digite a Quantidade de Pontos Turísticos: \n");
         scanf("%d", &pontosturisticos1);
 
         printf("Carta 1: \n");
@@ -46,7 +39,7 @@
         printf("População: %d", populacao1);
         printf("Área: %f, \n", area1); 
         printf("PIB: %f \n", pib1);
-        quociente = populacao1 / área;
+        quociente = populacao1 / area1;
         printf("Densidade Populacional: %.2f \n", quociente);
         quociente = pib1 / populacao1;
         printf("PIB per Capita: %.2f \n", quociente);
@@ -55,18 +48,18 @@
         printf("Carta 2 \n");
         printf("\n");
         printf("Digite o Estado: \n");
-        scanf("%s", &estado2); 
+        scanf("%s", estado2); 
         printf("Digite o Código da Carta: \n");
-        scanf("%s", &codigo2);
+        scanf("%s", codigo2);
         printf("Digite a Cidade: \n");
-        scanf("%s", &cidade2);
+        scanf("%s", cidade2);
         printf("Digite a População: \n");
         scanf("%d", &populacao2);
         printf("Digite a Área: \n");
         scanf("%f", &area2);
         printf("Digite o PIB: \n");
         scanf("%f", &pib2);
-        print("Digite a Quantidade de Pontos Turísticos: \n");
+        printf("Digite a Quantidade de Pontos Turísticos: \n");
         scanf("%d", &pontosturisticos2);
 
          printf("Carta 2: \n");
@@ -77,7 +70,7 @@
         printf("População: %d", populacao2);
         printf("Área: %f, \n", area2); 
         printf("PIB: %f \n", pib2);
-        quociente = populacao1 / área;
+        quociente = populacao1 / area2;
         printf("Densidade Populacional: %.2f \n", quociente);
         quociente = pib2 / populacao2;
         printf("PIB per Capita: %.2f \n", quociente);
@@ -85,7 +78,7 @@
         
         //Calculando o Super Poder
         float superpoder1 = (float) populacao1 + area1 + pib1 + pibpercapita1 + pontosturisticos1;
-        float superpoder2 = (float) populacao2 + area2 + pib2 + pibpercepita2 + pontosturisticos2;
+        float superpoder2 = (float) populacao2 + area2 + pib2 + pibpercapita2 + pontosturisticos2;
 
         //Calculando o inverso da densidade
         float inversodensidade1 = (densidadepopulacional1 > 0) * (1 / densidadepopulacional1);
@@ -105,8 +98,6 @@
         return 0;
 
     }
-        
-
 
 
 
